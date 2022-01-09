@@ -6,7 +6,7 @@
   3.  Header css
   4.  Navbar css
   5.  Hero Area css
-  6.   css
+  6.  About Us Area css
   7.   css
   8.   css
   9.   css
@@ -81,7 +81,7 @@ $yellow__color: #fec600;
 
 .section__header__description {
   font-size: 17px;
-  max-width: 450px;
+  max-width: 565px;
   margin: 0 auto;
   text-align: center;
 }
@@ -120,7 +120,7 @@ $yellow__color: #fec600;
         }
         a {
           padding: 0;
-          color: #fff;
+          color: #d7d6d6;
           transition: all 0.3s linear;
           position: relative;
           font-weight: 500;
@@ -155,7 +155,7 @@ $yellow__color: #fec600;
     h2 {
       font-size: 50px;
       font-weight: 600;
-      color: #ffff;
+      color: #d7d6d6;
     }
 
     h1 {
@@ -166,7 +166,7 @@ $yellow__color: #fec600;
     }
 
     p {
-      color: #fff;
+      color: #adaaaa;
       max-width: 500px;
       margin: 40px auto;
       line-height: 30px;
@@ -206,13 +206,13 @@ $yellow__color: #fec600;
   }
 }
 
-// About Us Area CSS
+// About Us Area css
 #about__us {
   padding: 50px 0;
   .about__us__card {
     text-align: center;
-    padding: 70px 40px;
-    background-color: lightblue;
+    padding: 40px 20px;
+    background-color: #eeeeee;
     h3 {
       font-size: 25px;
       text-transform: uppercase;

@@ -6,7 +6,7 @@
   3.  Header css
   4.  Navbar css
   5.  Hero Area css
-  6.   css
+  6.  About Us Area css
   7.   css
   8.   css
   9.   css
@@ -72,7 +72,7 @@ div {
 
 .section__header__description {
   font-size: 17px;
-  max-width: 450px;
+  max-width: 565px;
   margin: 0 auto;
   text-align: center;
 }
@@ -115,7 +115,7 @@ div {
 
 #header nav ul li a {
   padding: 0;
-  color: #fff;
+  color: #d7d6d6;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   position: relative;
@@ -152,7 +152,7 @@ div {
 #header #hero__area h2 {
   font-size: 50px;
   font-weight: 600;
-  color: #ffff;
+  color: #d7d6d6;
 }
 
 #header #hero__area h1 {
@@ -163,7 +163,7 @@ div {
 }
 
 #header #hero__area p {
-  color: #fff;
+  color: #adaaaa;
   max-width: 500px;
   margin: 40px auto;
   line-height: 30px;
@@ -218,8 +218,8 @@ div {
 
 #about__us .about__us__card {
   text-align: center;
-  padding: 70px 40px;
-  background-color: lightblue;
+  padding: 40px 20px;
+  background-color: #eeeeee;
 }
 
 #about__us .about__us__card h3 {
