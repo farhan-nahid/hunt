@@ -8,12 +8,12 @@
                 =================================
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a,
@@ -66,18 +66,20 @@ html {
 .section__title {
   font-size: 40px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   margin-bottom: 20px;
+  color: #333333;
 }
 
 .section__header__description {
   font-size: 17px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   max-width: 565px;
   margin: 0 auto;
   text-align: center;
+  color: #333333;
 }
 
 .z__index {
@@ -95,10 +97,7 @@ html {
                 =================================
 
 */
-#about__us .about__us__container .about__left::before,
-#about__us .about__us__container .about__right::before,
-#about__us .about__us__container .about__top::before,
-#about__us .about__us__container .about__bottom::before {
+#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before {
   content: '';
   width: 60px;
   height: 60px;
@@ -107,22 +106,18 @@ html {
   z-index: -1;
 }
 
-#about__us .about__us__container .about__left::after,
-#about__us .about__us__container .about__right::after,
-#about__us .about__us__container .about__top::after,
-#about__us .about__us__container .about__bottom::after {
+#about__us .about__us__container .about__left::after, #about__us .about__us__container .about__right::after, #about__us .about__us__container .about__top::after, #about__us .about__us__container .about__bottom::after {
   position: absolute;
   content: '';
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background-color: #333333;
   border-radius: 50%;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-#header #hero__area .slider__item::after,
-#about__us .about__us__container .about__circle .about__us__image::after {
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -161,7 +156,7 @@ html {
   position: relative;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #header nav ul li a::before {
@@ -188,7 +183,7 @@ html {
   width: 100%;
   position: relative;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 #header #hero__area .banner__prev,
@@ -205,7 +200,7 @@ html {
   cursor: pointer;
   z-index: 2;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -232,15 +227,15 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
 #header #hero__area .slider__item h2 {
   font-size: 50px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #d7d6d6;
 }
 
@@ -248,7 +243,7 @@ html {
   margin-top: 20px;
   font-size: 50px;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fec600;
 }
 
@@ -259,7 +254,7 @@ html {
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #header #hero__area .slider__item .hero__buttons {
@@ -267,8 +262,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #header #hero__area .slider__item .hero__buttons button {
@@ -277,7 +272,7 @@ html {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -308,15 +303,15 @@ html {
 }
 
 #header #hero__area .bg-1 {
-  background: url('../images/banner-bg1.jpg') no-repeat center/cover;
+  background: url("../images/banner-bg1.jpg") no-repeat center/cover;
 }
 
 #header #hero__area .bg-2 {
-  background: url('../images/banner-bg2.jpg') no-repeat center/cover;
+  background: url("../images/banner-bg2.jpg") no-repeat center/cover;
 }
 
 #header #hero__area .bg-3 {
-  background: url('../images/banner-bg3.jpg') no-repeat center/cover;
+  background: url("../images/banner-bg3.jpg") no-repeat center/cover;
 }
 
 /*
@@ -329,10 +324,7 @@ html {
                 =================================
 
 */
-#about__us .about__us__container .about__left::before,
-#about__us .about__us__container .about__right::before,
-#about__us .about__us__container .about__top::before,
-#about__us .about__us__container .about__bottom::before {
+#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before {
   content: '';
   width: 60px;
   height: 60px;
@@ -341,22 +333,18 @@ html {
   z-index: -1;
 }
 
-#about__us .about__us__container .about__left::after,
-#about__us .about__us__container .about__right::after,
-#about__us .about__us__container .about__top::after,
-#about__us .about__us__container .about__bottom::after {
+#about__us .about__us__container .about__left::after, #about__us .about__us__container .about__right::after, #about__us .about__us__container .about__top::after, #about__us .about__us__container .about__bottom::after {
   position: absolute;
   content: '';
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background-color: #333333;
   border-radius: 50%;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-#header #hero__area .slider__item::after,
-#about__us .about__us__container .about__circle .about__us__image::after {
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -376,13 +364,13 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 #about__us .about__us__container .about__left {
@@ -395,15 +383,20 @@ html {
 #about__us .about__us__container .about__left::before {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   right: -5%;
 }
 
 #about__us .about__us__container .about__left::after {
-  right: -77px;
+  right: -72px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#about__us .about__us__container .about__left:hover {
+  -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__left:hover::after {
@@ -420,15 +413,20 @@ html {
 #about__us .about__us__container .about__right::before {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   left: -5%;
 }
 
 #about__us .about__us__container .about__right::after {
-  left: -77px;
+  left: -72px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#about__us .about__us__container .about__right:hover {
+  -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__right:hover::after {
@@ -440,7 +438,7 @@ html {
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -448,15 +446,20 @@ html {
 #about__us .about__us__container .about__top::before {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
   bottom: -5%;
 }
 
 #about__us .about__us__container .about__top::after {
-  bottom: -77px;
+  bottom: -52px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#about__us .about__us__container .about__top:hover {
+  -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__top:hover::after {
@@ -468,21 +471,26 @@ html {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #about__us .about__us__container .about__bottom::before {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
   top: -5%;
 }
 
 #about__us .about__us__container .about__bottom::after {
-  top: -77px;
+  top: -52px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#about__us .about__us__container .about__bottom:hover {
+  -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__bottom:hover::after {
@@ -499,7 +507,7 @@ html {
 #about__us .about__us__container .about__us__card h4 {
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -507,12 +515,12 @@ html {
 #about__us .about__us__container .about__us__card p {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 25px;
 }
 
 #about__us .about__us__container .about__circle {
-  margin: 265px 0;
+  margin: 244px 0;
   height: 400px;
   width: 400px;
   border: 1px solid #333333;
@@ -521,11 +529,11 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about__us .about__us__container .about__circle .about__us__image {
@@ -541,6 +549,6 @@ html {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

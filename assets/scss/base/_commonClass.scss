@@ -5,6 +5,7 @@
   @include fontStyle(40px, 600, $fr);
   text-align: center;
   margin-bottom: 20px;
+  color: $dark__color;
 }
 
 .section__header__description {
@@ -12,6 +13,7 @@
   max-width: 565px;
   margin: 0 auto;
   text-align: center;
+  color: $dark__color;
 }
 
 .z__index {
