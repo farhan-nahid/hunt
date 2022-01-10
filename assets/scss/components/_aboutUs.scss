@@ -1,0 +1,158 @@
+@import '../variables/variables';
+@import '../mixins/fontStyles';
+@import '../extended/allExtended';
+
+#about__us {
+  padding: 50px 0;
+  .about__us__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 150px 0;
+
+    // left div
+
+    .about__left {
+      text-align: right;
+      left: 0;
+      transition: $transition;
+      &::before {
+        @extend %about__before__common;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        right: -5%;
+      }
+      &::after {
+        @extend %about__after__common;
+        right: -77px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        &::after {
+          background-color: $yellow__color;
+        }
+      }
+    }
+
+    // right div
+
+    .about__right {
+      text-align: left;
+      right: 0;
+      transition: $transition;
+      &::before {
+        @extend %about__before__common;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        left: -5%;
+      }
+      &::after {
+        @extend %about__after__common;
+        left: -77px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        &::after {
+          background-color: $yellow__color;
+        }
+      }
+    }
+
+    // top div
+
+    .about__top {
+      text-align: center;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: $transition;
+      &::before {
+        @extend %about__before__common;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        bottom: -5%;
+      }
+      &::after {
+        @extend %about__after__common;
+        bottom: -77px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &:hover {
+        &::after {
+          background-color: $yellow__color;
+        }
+      }
+    }
+
+    // bottom div
+
+    .about__bottom {
+      text-align: center;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      &::before {
+        @extend %about__before__common;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        top: -5%;
+      }
+      &::after {
+        @extend %about__after__common;
+        top: -77px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &:hover {
+        &::after {
+          background-color: $yellow__color;
+        }
+      }
+    }
+    .about__us__card {
+      position: absolute;
+      width: 400px;
+      padding: 30px;
+      background-color: $bg__color;
+      h4 {
+        @include fontStyle(18px, 500, $fr);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      p {
+        @include fontStyle(16px, 400, $fos);
+        line-height: 25px;
+      }
+    }
+    .about__circle {
+      margin: 265px 0;
+      height: 400px;
+      width: 400px;
+      border: 1px solid $dark__color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .about__us__image {
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        &::after {
+          @extend %dark__overlay;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

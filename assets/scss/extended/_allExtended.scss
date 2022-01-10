@@ -1,0 +1,31 @@
+@import '../variables/variables';
+
+%about__before__common {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: $bg__color;
+  position: absolute;
+  z-index: -1;
+}
+
+%about__after__common {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-color: $dark__color;
+  border-radius: 50%;
+  transition: $transition;
+}
+
+%dark__overlay {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}

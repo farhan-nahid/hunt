@@ -1,28 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap");
-/* 
+/*
 
-  1.  Variables & mixins
-  2.  Common css
-  3.  UTILITIES
-  4.  Header css
-  5.  Navbar css
-  6.  Hero Area css
-  7.  About Us Area css
-  8.   css
-  9.   css
-  10.   css
-  11.   css
-  12.   css
-  13.   css
-  14.   css
-  15.   css
+                =================================
+
+                        import reset css 
+
+
+                =================================
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a,
@@ -62,14 +53,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
+
+                =================================
+
+                        import common css 
+
+
+                =================================
+
+*/
 .section__title {
   font-size: 40px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .section__header__description {
   font-size: 17px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
   max-width: 565px;
   margin: 0 auto;
   text-align: center;
@@ -78,6 +83,54 @@ html {
 .z__index {
   position: relative;
   z-index: 9;
+}
+
+/*
+
+                =================================
+
+                        import header css
+
+
+                =================================
+
+*/
+#about__us .about__us__container .about__left::before,
+#about__us .about__us__container .about__right::before,
+#about__us .about__us__container .about__top::before,
+#about__us .about__us__container .about__bottom::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
+  position: absolute;
+  z-index: -1;
+}
+
+#about__us .about__us__container .about__left::after,
+#about__us .about__us__container .about__right::after,
+#about__us .about__us__container .about__top::after,
+#about__us .about__us__container .about__bottom::after {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-color: #333333;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#header #hero__area .slider__item::after,
+#about__us .about__us__container .about__circle .about__us__image::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 #header nav {
@@ -108,7 +161,7 @@ html {
   position: relative;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #header nav ul li a::before {
@@ -135,7 +188,7 @@ html {
   width: 100%;
   position: relative;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 #header #hero__area .banner__prev,
@@ -152,7 +205,7 @@ html {
   cursor: pointer;
   z-index: 2;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -179,26 +232,15 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
-}
-
-#header #hero__area .slider__item::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
 }
 
 #header #hero__area .slider__item h2 {
   font-size: 50px;
   font-weight: 600;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #d7d6d6;
 }
 
@@ -206,7 +248,7 @@ html {
   margin-top: 20px;
   font-size: 50px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fec600;
 }
 
@@ -217,7 +259,7 @@ html {
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #header #hero__area .slider__item .hero__buttons {
@@ -225,8 +267,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #header #hero__area .slider__item .hero__buttons button {
@@ -235,7 +277,7 @@ html {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -266,53 +308,239 @@ html {
 }
 
 #header #hero__area .bg-1 {
-  background: url("../images/banner-bg1.jpg") no-repeat center/cover;
+  background: url('../images/banner-bg1.jpg') no-repeat center/cover;
 }
 
 #header #hero__area .bg-2 {
-  background: url("../images/banner-bg2.jpg") no-repeat center/cover;
+  background: url('../images/banner-bg2.jpg') no-repeat center/cover;
 }
 
 #header #hero__area .bg-3 {
-  background: url("../images/banner-bg3.jpg") no-repeat center/cover;
+  background: url('../images/banner-bg3.jpg') no-repeat center/cover;
+}
+
+/*
+
+                =================================
+
+                         import about us css
+
+
+                =================================
+
+*/
+#about__us .about__us__container .about__left::before,
+#about__us .about__us__container .about__right::before,
+#about__us .about__us__container .about__top::before,
+#about__us .about__us__container .about__bottom::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
+  position: absolute;
+  z-index: -1;
+}
+
+#about__us .about__us__container .about__left::after,
+#about__us .about__us__container .about__right::after,
+#about__us .about__us__container .about__top::after,
+#about__us .about__us__container .about__bottom::after {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-color: #333333;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#header #hero__area .slider__item::after,
+#about__us .about__us__container .about__circle .about__us__image::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 #about__us {
   padding: 50px 0;
 }
 
-#about__us .about__us__card {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #eeeeee;
-}
-
-#about__us .about__us__card h3 {
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-#about__us .about__us__card p {
-  line-height: 25px;
-  font-size: 18px;
-}
-
-#about__us .about__us__image {
-  text-align: center;
-  height: 370px;
-  width: 370px;
-  border: 3px solid #333;
-  border-radius: 50%;
-  margin: 0 auto;
+#about__us .about__us__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin: 150px 0;
+}
+
+#about__us .about__us__container .about__left {
+  text-align: right;
+  left: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#about__us .about__us__container .about__left::before {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  right: -5%;
+}
+
+#about__us .about__us__container .about__left::after {
+  right: -77px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#about__us .about__us__container .about__left:hover::after {
+  background-color: #fec600;
+}
+
+#about__us .about__us__container .about__right {
+  text-align: left;
+  right: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#about__us .about__us__container .about__right::before {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  left: -5%;
+}
+
+#about__us .about__us__container .about__right::after {
+  left: -77px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#about__us .about__us__container .about__right:hover::after {
+  background-color: #fec600;
+}
+
+#about__us .about__us__container .about__top {
+  text-align: center;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#about__us .about__us__container .about__top::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -5%;
+}
+
+#about__us .about__us__container .about__top::after {
+  bottom: -77px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#about__us .about__us__container .about__top:hover::after {
+  background-color: #fec600;
+}
+
+#about__us .about__us__container .about__bottom {
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#about__us .about__us__container .about__bottom::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  top: -5%;
+}
+
+#about__us .about__us__container .about__bottom::after {
+  top: -77px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#about__us .about__us__container .about__bottom:hover::after {
+  background-color: #fec600;
+}
+
+#about__us .about__us__container .about__us__card {
+  position: absolute;
+  width: 400px;
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+
+#about__us .about__us__container .about__us__card h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#about__us .about__us__container .about__us__card p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 25px;
+}
+
+#about__us .about__us__container .about__circle {
+  margin: 265px 0;
+  height: 400px;
+  width: 400px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#about__us .about__us__container .about__circle .about__us__image {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#about__us .about__us__container .about__circle .about__us__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

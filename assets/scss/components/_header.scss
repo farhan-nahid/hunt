@@ -1,0 +1,155 @@
+@import '../variables/variables';
+@import '../mixins/fontStyles';
+@import '../extended/allExtended';
+
+#header {
+  // Navbar css
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    ul {
+      li {
+        margin-left: 20px;
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+        &:nth-child(7) {
+          margin-left: 0;
+        }
+        a {
+          padding: 0;
+          color: $white__heading;
+          transition: $transition;
+          position: relative;
+          @include fontStyle(16px, 500, $fos);
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: $yellow__color;
+            transition: $transition;
+          }
+          &:hover {
+            color: $yellow__color;
+          }
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // Hero Area css
+
+  #hero__area {
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    .banner__prev,
+    .banner__next {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: $white__color;
+      border: 1px solid $white__color;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      z-index: 2;
+      transform: translateY(-50%);
+      transition: $transition;
+    }
+    .banner__prev {
+      left: 30px;
+    }
+    .banner__next {
+      right: 30px;
+    }
+    .banner__prev:hover,
+    .banner__next:hover {
+      background: $yellow__color;
+      border: 1px solid $yellow__color;
+    }
+    .slider__item {
+      width: 100%;
+      position: relative;
+      padding: 200px 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      &::after {
+        @extend %dark__overlay;
+      }
+
+      h2 {
+        @include fontStyle(50px, 600, $fr);
+        color: $white__heading;
+      }
+
+      h1 {
+        margin-top: 20px;
+        @include fontStyle(50px, 600, $fos);
+        color: $yellow__color;
+      }
+
+      p {
+        color: $white__pera;
+        max-width: 750px;
+        margin: 40px auto;
+        line-height: 30px;
+        @include fontStyle(18px, 400, $fos);
+      }
+      .hero__buttons {
+        display: flex;
+        justify-content: center;
+        button {
+          padding: 10px 30px;
+          outline: 0;
+          text-transform: uppercase;
+          @include fontStyle(18px, 400, $fr);
+          transition: $transition;
+          &:nth-child(1) {
+            background-color: $yellow__color;
+            margin-right: 20px;
+            color: $dark__color;
+            border: 1px solid transparent;
+            &:hover {
+              border: 1px solid $white__color;
+              color: $white__color;
+              background-color: transparent;
+            }
+          }
+          &:nth-child(2) {
+            background-color: transparent;
+            color: $white__color;
+            border: 1px solid $white__color;
+            &:hover {
+              background-color: $yellow__color;
+              color: $dark__color;
+              border: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .bg-1 {
+      background: url('../images/banner-bg1.jpg') no-repeat center / cover;
+    }
+    .bg-2 {
+      background: url('../images/banner-bg2.jpg') no-repeat center / cover;
+    }
+    .bg-3 {
+      background: url('../images/banner-bg3.jpg') no-repeat center / cover;
+    }
+  }
+}
