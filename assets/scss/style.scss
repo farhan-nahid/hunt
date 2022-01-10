@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
+
 /* 
 
-  1.  Common css
-  2.  Variables
-  2.5.  UTILITIES
-  3.  Header css
-  4.  Navbar css
-  5.  Hero Area css
-  6.  About Us Area css
-  7.   css
+  1.  Variables & mixins
+  2.  Common css
+  3.  UTILITIES
+  4.  Header css
+  5.  Navbar css
+  6.  Hero Area css
+  7.  About Us Area css
   8.   css
   9.   css
   10.   css
@@ -16,17 +17,28 @@
   13.   css
   14.   css
   15.   css
-  16.   css
-  17.   css
-  18.   css
-  19.   css
-  20.   css
 
 */
 
-// Common css
+// Variables
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$yellow__color: #fec600;
+$white__color: #ffffff;
+$white__heading: #d7d6d6;
+$white__pera: #adaaaa;
+$dark__color: #333333;
+$fr: 'Raleway', sans-serif;
+$fos: 'Open Sans', sans-serif;
+$fso: 'Sacramento', cursive;
+$transition: all 0.3s linear;
+
+// mixins
+
+@mixin fontStyle($fs, $fw, $ff) {
+  font-size: $fs;
+  font-weight: $fw;
+  font-family: $ff;
+}
 
 * {
   margin: 0;
@@ -67,9 +79,9 @@ div {
   padding: 0;
 }
 
-// Variables
-
-$yellow__color: #fec600;
+html {
+  scroll-behavior: smooth;
+}
 
 // UTILITIES
 
@@ -86,29 +98,22 @@ $yellow__color: #fec600;
   text-align: center;
 }
 
+.z__index {
+  position: relative;
+  z-index: 9;
+}
+
 // Header css
 
 #header {
-  background-image: url('../images/banner.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 535px, 0 100%);
-  &::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-
   // Navbar css
 
   nav {
-    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
     ul {
       li {
         margin-left: 20px;
@@ -120,10 +125,10 @@ $yellow__color: #fec600;
         }
         a {
           padding: 0;
-          color: #d7d6d6;
-          transition: all 0.3s linear;
+          color: $white__heading;
+          transition: $transition;
           position: relative;
-          font-weight: 500;
+          @include fontStyle(16px, 500, $fos);
           &::before {
             content: '';
             position: absolute;
@@ -132,7 +137,7 @@ $yellow__color: #fec600;
             width: 0;
             height: 2px;
             background-color: $yellow__color;
-            transition: all 0.3s linear;
+            transition: $transition;
           }
           &:hover {
             color: $yellow__color;
@@ -148,60 +153,113 @@ $yellow__color: #fec600;
   // Hero Area css
 
   #hero__area {
-    padding: 100px 0;
-    z-index: 1;
+    width: 100%;
     position: relative;
-    text-align: center;
-    h2 {
-      font-size: 50px;
-      font-weight: 600;
-      color: #d7d6d6;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    .banner__prev,
+    .banner__next {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: $white__color;
+      border: 1px solid $white__color;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      z-index: 2;
+      transform: translateY(-50%);
+      transition: $transition;
     }
-
-    h1 {
-      margin-top: 20px;
-      font-size: 50px;
-      font-weight: 600;
-      color: $yellow__color;
+    .banner__prev {
+      left: 30px;
     }
-
-    p {
-      color: #adaaaa;
-      max-width: 500px;
-      margin: 40px auto;
-      line-height: 30px;
-      font-size: 18px;
+    .banner__next {
+      right: 30px;
     }
-    .hero__buttons {
+    .banner__prev:hover,
+    .banner__next:hover {
+      background: $yellow__color;
+      border: 1px solid $yellow__color;
+    }
+    .slider__item {
+      width: 100%;
+      position: relative;
+      padding: 200px 0;
       display: flex;
       justify-content: center;
-      button {
-        padding: 10px 30px;
-        outline: 0;
-        font-size: 18px;
-        transition: all 0.5s linear;
-        text-transform: uppercase;
-        &:nth-child(1) {
-          background-color: $yellow__color;
-          margin-right: 20px;
-          color: #000;
-          border: 1px solid transparent;
-          &:hover {
-            border: 1px solid $yellow__color;
-            color: $yellow__color;
-            background-color: transparent;
-          }
-        }
-        &:nth-child(2) {
-          background-color: transparent;
-          color: $yellow__color;
-          border: 1px solid $yellow__color;
-          &:hover {
+      text-align: center;
+      &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+
+      h2 {
+        @include fontStyle(50px, 600, $fr);
+        color: $white__heading;
+      }
+
+      h1 {
+        margin-top: 20px;
+        @include fontStyle(50px, 600, $fos);
+        color: $yellow__color;
+      }
+
+      p {
+        color: $white__pera;
+        max-width: 750px;
+        margin: 40px auto;
+        line-height: 30px;
+        @include fontStyle(18px, 400, $fos);
+      }
+      .hero__buttons {
+        display: flex;
+        justify-content: center;
+        button {
+          padding: 10px 30px;
+          outline: 0;
+          text-transform: uppercase;
+          @include fontStyle(18px, 400, $fr);
+          transition: $transition;
+          &:nth-child(1) {
             background-color: $yellow__color;
-            color: #000;
+            margin-right: 20px;
+            color: $dark__color;
+            border: 1px solid transparent;
+            &:hover {
+              border: 1px solid $white__color;
+              color: $white__color;
+              background-color: transparent;
+            }
+          }
+          &:nth-child(2) {
+            background-color: transparent;
+            color: $white__color;
+            border: 1px solid $white__color;
+            &:hover {
+              background-color: $yellow__color;
+              color: $dark__color;
+              border: 1px solid transparent;
+            }
           }
         }
       }
+    }
+    .bg-1 {
+      background: url('../images/banner-bg1.jpg') no-repeat center / cover;
+    }
+    .bg-2 {
+      background: url('../images/banner-bg2.jpg') no-repeat center / cover;
+    }
+    .bg-3 {
+      background: url('../images/banner-bg3.jpg') no-repeat center / cover;
     }
   }
 }
