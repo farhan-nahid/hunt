@@ -3,13 +3,12 @@
 @import '../extended/darkOverlay';
 @import '../extended/aboutAfterCommon';
 @import '../extended/aboutBeforeCommon';
+@import '../extended/flexAlign';
 
 #about__us {
   padding: 50px 0;
   .about__us__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex__align;
     position: relative;
     margin: 100px 0;
 
@@ -32,7 +31,7 @@
         transform: translateY(-50%);
       }
       &:hover {
-        filter: drop-shadow(5px 6px 7px #bdb3b3);
+        filter: $filter;
         &::after {
           background-color: $yellow__color;
         }
@@ -135,14 +134,12 @@
       }
     }
     .about__circle {
+      @extend %flex__align;
       margin: 244px 0;
       height: 400px;
       width: 400px;
       border: 1px solid $dark__color;
       border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       .about__us__image {
         height: 350px;
         width: 350px;

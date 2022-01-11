@@ -1,11 +1,12 @@
 @import '../variables/variables';
 @import '../mixins/fontStyles';
 @import '../extended/darkOverlay';
+@import '../extended/flexAlign';
 
 #portfolio {
   background: url('../images/portfolio-bg.jpg') no-repeat center / cover;
   padding: 100px 0;
-  clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 0% 100%);
+  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
   position: relative;
   &::after {
     @extend %dark__overlay;
@@ -18,9 +19,7 @@
   }
 
   .portfolio__image__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex__align;
     margin: 80px 0;
     .portfolio__image {
       overflow: hidden;
@@ -29,19 +28,15 @@
       transition: $transition;
       .portfolio__image__overlay {
         @extend %dark__overlay;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex__align;
         transform: translateY(-100%);
         transition: $transition;
         a {
+          @extend %flex__align;
           font-size: 16px;
           height: 35px;
           width: 35px;
           border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           background-color: $bg__color;
           color: $dark__color;
           transition: $transition;

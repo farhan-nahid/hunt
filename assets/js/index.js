@@ -18,7 +18,7 @@ $(document).ready(function () {
   });
 
   // portfolio slider
-
+  /* 
   $('.portfolio__image__container').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -26,8 +26,23 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     arrows: false,
     pauseOnHover: false,
-  });
+  }); */
 
   // venobox
   $('.venobox').venobox();
+
+  // services slider
+
+  $('.service__slider').slick({
+    arrows: true,
+    centerMode: true,
+    centerPadding: '0',
+    vertical: true,
+    slidesToShow: 3,
+    autoplay: true,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    prevArrow: "<i class='fas fa-chevron-up service__up'></i>",
+    nextArrow: "<i class='fas fa-chevron-down service__down'></i>",
+  });
 });
