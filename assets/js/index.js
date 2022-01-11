@@ -16,4 +16,18 @@ $(document).ready(function () {
     nextArrow: `<i class='fas fa-chevron-right banner__next'></i>`,
     prevArrow: `<i class='fas fa-chevron-left banner__prev'></i>`,
   });
+
+  // portfolio slider
+
+  $('.portfolio__image__container').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    pauseOnHover: false,
+  });
+
+  // venobox
+  $('.venobox').venobox();
 });

@@ -1,0 +1,11 @@
+@import '../variables/variables';
+
+%about__after__common {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: $dark__color;
+  border-radius: 50%;
+  transition: $transition;
+}

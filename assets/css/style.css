@@ -2,7 +2,7 @@
 
                 =================================
 
-                        import reset css 
+                         reset css start
 
 
                 =================================
@@ -57,7 +57,17 @@ html {
 
                 =================================
 
-                        import common css 
+                           reset css end
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                          common css start
 
 
                 =================================
@@ -91,33 +101,23 @@ html {
 
                 =================================
 
-                        import header css
+                          common css end
 
 
                 =================================
 
 */
-#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before {
-  content: '';
-  width: 60px;
-  height: 60px;
-  background: #f1f1f1;
-  position: absolute;
-  z-index: -1;
-}
+/*
 
-#about__us .about__us__container .about__left::after, #about__us .about__us__container .about__right::after, #about__us .about__us__container .about__top::after, #about__us .about__us__container .about__bottom::after {
-  position: absolute;
-  content: '';
-  height: 20px;
-  width: 20px;
-  background-color: #333333;
-  border-radius: 50%;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
+                =================================
 
-#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after {
+                         header css start
+
+
+                =================================
+
+*/
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
   content: '';
   height: 100%;
   width: 100%;
@@ -318,19 +318,31 @@ html {
 
                 =================================
 
-                         import about us css
+                         header css end
 
 
                 =================================
 
 */
-#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before {
+/*
+
+                =================================
+
+                         about us css start
+
+
+                =================================
+
+*/
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
   content: '';
-  width: 60px;
-  height: 60px;
-  background: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 #about__us .about__us__container .about__left::after, #about__us .about__us__container .about__right::after, #about__us .about__us__container .about__top::after, #about__us .about__us__container .about__bottom::after {
@@ -344,15 +356,13 @@ html {
   transition: all 0.3s linear;
 }
 
-#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after {
+#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before {
   content: '';
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  z-index: -1;
 }
 
 #about__us {
@@ -551,4 +561,221 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+/*
+
+                =================================
+
+                         about us css end
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                      portfolio css start
+
+
+                =================================
+
+*/
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#portfolio {
+  background: url("../images/portfolio-bg.jpg") no-repeat center/cover;
+  padding: 100px 0;
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0% 10%, 100% 0%, 100% 95%, 0% 100%);
+  position: relative;
+}
+
+#portfolio .section__title {
+  color: #ffffff;
+}
+
+#portfolio .section__header__description {
+  color: #adaaaa;
+}
+
+#portfolio .portfolio__image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 0;
+}
+
+#portfolio .portfolio__image__container .portfolio__image {
+  overflow: hidden;
+  margin: 0 20px 20px 0;
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a {
+  font-size: 16px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1f1f1;
+  color: #333333;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a:hover {
+  background-color: #fec600;
+}
+
+#portfolio .portfolio__image__container .portfolio__image:hover .portfolio__image__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#portfolio .portfolio__image__container .portfolio__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vbox-grab .vbox-child img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
+
+                =================================
+
+                      portfolio css end
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                      services css start
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                      services css end
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                     testimonial css start
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                      testimonial css end
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                      clients css start
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                       clients css end
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+ 
+                        footer css start
+
+
+                =================================
+
+*/
+/*
+
+                =================================
+
+                       footer css end
+
+
+                =================================
+
+*/
 /*# sourceMappingURL=style.css.map */

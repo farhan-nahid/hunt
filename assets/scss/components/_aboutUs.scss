@@ -1,6 +1,8 @@
 @import '../variables/variables';
 @import '../mixins/fontStyles';
-@import '../extended/allExtended';
+@import '../extended/darkOverlay';
+@import '../extended/aboutAfterCommon';
+@import '../extended/aboutBeforeCommon';
 
 #about__us {
   padding: 50px 0;

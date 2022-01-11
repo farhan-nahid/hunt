@@ -1,0 +1,10 @@
+@import '../variables/variables';
+
+%about__before__common {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: $bg__color;
+  position: absolute;
+  z-index: -1;
+}
