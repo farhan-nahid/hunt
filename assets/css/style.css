@@ -8,12 +8,12 @@
                 =================================
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a,
@@ -76,7 +76,7 @@ html {
 .section__title {
   font-size: 40px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   margin-bottom: 20px;
   color: #333333;
@@ -85,7 +85,7 @@ html {
 .section__header__description {
   font-size: 17px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   max-width: 565px;
   margin: 0 auto;
   text-align: center;
@@ -117,10 +117,7 @@ html {
                 =================================
 
 */
-#header #hero__area .slider__item::after,
-#about__us .about__us__container .about__circle .about__us__image::after,
-#portfolio::after,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #testimonial::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -131,27 +128,17 @@ html {
   top: 0;
 }
 
-#header #hero__area .slider__item,
-#header #hero__area .slider__item .hero__buttons,
-#about__us .about__us__container,
-#about__us .about__us__container .about__circle,
-#portfolio .portfolio__image__container,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a,
-#services .service__container .line__shape .service__slider .service__up,
-#services .service__container .line__shape .service__slider .service__down,
-#services .service__container .line__shape .service__slider .service__single__slide,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg {
+#header #hero__area .slider__item, #header #hero__area .slider__item .hero__buttons, #about__us .about__us__container, #about__us .about__us__container .about__circle, #portfolio .portfolio__image__container, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a, #services .service__container .line__shape .service__slider .service__up,
+#services .service__container .line__shape .service__slider .service__down, #services .service__container .line__shape .service__slider .service__single__slide, #services .service__container .line__shape .service__slider .service__single__slide .service__image, #services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg, #testimonial .testimonial, #testimonial .testimonial .testimonial__image .testimonial__image__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header nav {
@@ -182,7 +169,7 @@ html {
   position: relative;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #header nav ul li a::before {
@@ -209,7 +196,7 @@ html {
   width: 100%;
   position: relative;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 #header #hero__area .banner__prev,
@@ -226,7 +213,7 @@ html {
   cursor: pointer;
   z-index: 2;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -254,7 +241,7 @@ html {
 #header #hero__area .slider__item h2 {
   font-size: 50px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #d7d6d6;
   text-align: center;
 }
@@ -262,7 +249,7 @@ html {
 #header #hero__area .slider__item h1 {
   font-size: 50px;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 20px;
   color: #fec600;
   text-align: center;
@@ -271,7 +258,7 @@ html {
 #header #hero__area .slider__item p {
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #adaaaa;
   max-width: 750px;
   margin: 40px auto;
@@ -285,7 +272,7 @@ html {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -316,15 +303,15 @@ html {
 }
 
 #header #hero__area .bg-1 {
-  background: url('../images/banner-bg1.jpg') no-repeat center/cover;
+  background: url("../images/banner-bg1.jpg") no-repeat center/cover;
 }
 
 #header #hero__area .bg-2 {
-  background: url('../images/banner-bg2.jpg') no-repeat center/cover;
+  background: url("../images/banner-bg2.jpg") no-repeat center/cover;
 }
 
 #header #hero__area .bg-3 {
-  background: url('../images/banner-bg3.jpg') no-repeat center/cover;
+  background: url("../images/banner-bg3.jpg") no-repeat center/cover;
 }
 
 /*
@@ -347,10 +334,7 @@ html {
                 =================================
 
 */
-#header #hero__area .slider__item::after,
-#about__us .about__us__container .about__circle .about__us__image::after,
-#portfolio::after,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #testimonial::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -361,10 +345,7 @@ html {
   top: 0;
 }
 
-#about__us .about__us__container .about__left::after,
-#about__us .about__us__container .about__right::after,
-#about__us .about__us__container .about__top::after,
-#about__us .about__us__container .about__bottom::after {
+#about__us .about__us__container .about__left::after, #about__us .about__us__container .about__right::after, #about__us .about__us__container .about__top::after, #about__us .about__us__container .about__bottom::after {
   position: absolute;
   content: '';
   height: 20px;
@@ -375,12 +356,7 @@ html {
   transition: all 0.5s linear;
 }
 
-#about__us .about__us__container .about__left::before,
-#about__us .about__us__container .about__right::before,
-#about__us .about__us__container .about__top::before,
-#about__us .about__us__container .about__bottom::before,
-#services .service__container .line__shape .service__slider .service__single__slide .left__text::before,
-#services .service__container .line__shape .service__slider .service__single__slide .right__text::before {
+#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before, #services .service__container .line__shape .service__slider .service__single__slide .left__text::before, #services .service__container .line__shape .service__slider .service__single__slide .right__text::before {
   content: '';
   width: 60px;
   height: 60px;
@@ -389,27 +365,17 @@ html {
   z-index: -1;
 }
 
-#header #hero__area .slider__item,
-#header #hero__area .slider__item .hero__buttons,
-#about__us .about__us__container,
-#about__us .about__us__container .about__circle,
-#portfolio .portfolio__image__container,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a,
-#services .service__container .line__shape .service__slider .service__up,
-#services .service__container .line__shape .service__slider .service__down,
-#services .service__container .line__shape .service__slider .service__single__slide,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg {
+#header #hero__area .slider__item, #header #hero__area .slider__item .hero__buttons, #about__us .about__us__container, #about__us .about__us__container .about__circle, #portfolio .portfolio__image__container, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a, #services .service__container .line__shape .service__slider .service__up,
+#services .service__container .line__shape .service__slider .service__down, #services .service__container .line__shape .service__slider .service__single__slide, #services .service__container .line__shape .service__slider .service__single__slide .service__image, #services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg, #testimonial .testimonial, #testimonial .testimonial .testimonial__image .testimonial__image__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about__us {
@@ -431,7 +397,7 @@ html {
 #about__us .about__us__container .about__left::before {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   right: -5%;
 }
 
@@ -439,12 +405,12 @@ html {
   right: -72px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #about__us .about__us__container .about__left:hover {
   -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
-  filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__left:hover::after {
@@ -461,7 +427,7 @@ html {
 #about__us .about__us__container .about__right::before {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   left: -5%;
 }
 
@@ -469,12 +435,12 @@ html {
   left: -72px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #about__us .about__us__container .about__right:hover {
   -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
-  filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__right:hover::after {
@@ -486,7 +452,7 @@ html {
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -494,7 +460,7 @@ html {
 #about__us .about__us__container .about__top::before {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
   bottom: -5%;
 }
 
@@ -502,12 +468,12 @@ html {
   bottom: -52px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #about__us .about__us__container .about__top:hover {
   -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
-  filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__top:hover::after {
@@ -519,13 +485,13 @@ html {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #about__us .about__us__container .about__bottom::before {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
   top: -5%;
 }
 
@@ -533,12 +499,12 @@ html {
   top: -52px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #about__us .about__us__container .about__bottom:hover {
   -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
-  filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #about__us .about__us__container .about__bottom:hover::after {
@@ -555,7 +521,7 @@ html {
 #about__us .about__us__container .about__us__card h4 {
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -563,7 +529,7 @@ html {
 #about__us .about__us__container .about__us__card p {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 25px;
 }
 
@@ -588,7 +554,7 @@ html {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 /*
@@ -611,10 +577,7 @@ html {
                 =================================
 
 */
-#header #hero__area .slider__item::after,
-#about__us .about__us__container .about__circle .about__us__image::after,
-#portfolio::after,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #testimonial::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -625,34 +588,24 @@ html {
   top: 0;
 }
 
-#header #hero__area .slider__item,
-#header #hero__area .slider__item .hero__buttons,
-#about__us .about__us__container,
-#about__us .about__us__container .about__circle,
-#portfolio .portfolio__image__container,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a,
-#services .service__container .line__shape .service__slider .service__up,
-#services .service__container .line__shape .service__slider .service__down,
-#services .service__container .line__shape .service__slider .service__single__slide,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg {
+#header #hero__area .slider__item, #header #hero__area .slider__item .hero__buttons, #about__us .about__us__container, #about__us .about__us__container .about__circle, #portfolio .portfolio__image__container, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a, #services .service__container .line__shape .service__slider .service__up,
+#services .service__container .line__shape .service__slider .service__down, #services .service__container .line__shape .service__slider .service__single__slide, #services .service__container .line__shape .service__slider .service__single__slide .service__image, #services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg, #testimonial .testimonial, #testimonial .testimonial .testimonial__image .testimonial__image__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #portfolio {
-  background: url('../images/portfolio-bg.jpg') no-repeat center/cover;
+  background: url("../images/portfolio-bg.jpg") no-repeat center/cover;
   padding: 100px 0;
   -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
-  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
   position: relative;
 }
 
@@ -678,7 +631,7 @@ html {
 
 #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay {
   -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+          transform: translateY(-100%);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -700,20 +653,20 @@ html {
 
 #portfolio .portfolio__image__container .portfolio__image:hover .portfolio__image__overlay {
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+          transform: translateY(0);
 }
 
 #portfolio .portfolio__image__container .portfolio__image img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .vbox-grab .vbox-child img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 /*
@@ -736,12 +689,7 @@ html {
                 =================================
 
 */
-#about__us .about__us__container .about__left::before,
-#about__us .about__us__container .about__right::before,
-#about__us .about__us__container .about__top::before,
-#about__us .about__us__container .about__bottom::before,
-#services .service__container .line__shape .service__slider .service__single__slide .left__text::before,
-#services .service__container .line__shape .service__slider .service__single__slide .right__text::before {
+#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before, #services .service__container .line__shape .service__slider .service__single__slide .left__text::before, #services .service__container .line__shape .service__slider .service__single__slide .right__text::before {
   content: '';
   width: 60px;
   height: 60px;
@@ -750,27 +698,17 @@ html {
   z-index: -1;
 }
 
-#header #hero__area .slider__item,
-#header #hero__area .slider__item .hero__buttons,
-#about__us .about__us__container,
-#about__us .about__us__container .about__circle,
-#portfolio .portfolio__image__container,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay,
-#portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a,
-#services .service__container .line__shape .service__slider .service__up,
-#services .service__container .line__shape .service__slider .service__down,
-#services .service__container .line__shape .service__slider .service__single__slide,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image,
-#services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg {
+#header #hero__area .slider__item, #header #hero__area .slider__item .hero__buttons, #about__us .about__us__container, #about__us .about__us__container .about__circle, #portfolio .portfolio__image__container, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a, #services .service__container .line__shape .service__slider .service__up,
+#services .service__container .line__shape .service__slider .service__down, #services .service__container .line__shape .service__slider .service__single__slide, #services .service__container .line__shape .service__slider .service__single__slide .service__image, #services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg, #testimonial .testimonial, #testimonial .testimonial .testimonial__image .testimonial__image__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #services {
@@ -790,12 +728,12 @@ html {
   margin-top: 90px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #services .service__container .line__shape .slick-slider .slick-center .service__text {
   -webkit-filter: drop-shadow(5px 6px 7px #bdb3b3);
-  filter: drop-shadow(5px 6px 7px #bdb3b3);
+          filter: drop-shadow(5px 6px 7px #bdb3b3);
 }
 
 #services .service__container .line__shape .slick-slider .slick-center .service__image .service__image__bg {
@@ -823,7 +761,7 @@ html {
   cursor: pointer;
   z-index: 2;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
@@ -855,7 +793,7 @@ html {
 #services .service__container .line__shape .service__slider .service__single__slide .service__text p {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333333;
   line-height: 30px;
 }
@@ -868,7 +806,7 @@ html {
 #services .service__container .line__shape .service__slider .service__single__slide .left__text::before {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   right: -5%;
 }
 
@@ -880,7 +818,7 @@ html {
 #services .service__container .line__shape .service__slider .service__single__slide .right__text::before {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(45deg);
-  transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   left: -5%;
 }
 
@@ -899,7 +837,7 @@ html {
   height: 40px;
   width: 40px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 #services .service__container .line__shape .service__slider .service__single__slide .service__title {
@@ -909,7 +847,7 @@ html {
 #services .service__container .line__shape .service__slider .service__single__slide .service__title h3 {
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #333333;
 }
 
@@ -933,6 +871,215 @@ html {
                 =================================
 
 */
+#header #hero__area .slider__item::after, #about__us .about__us__container .about__circle .about__us__image::after, #portfolio::after, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #testimonial::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#header #hero__area .slider__item, #header #hero__area .slider__item .hero__buttons, #about__us .about__us__container, #about__us .about__us__container .about__circle, #portfolio .portfolio__image__container, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a, #services .service__container .line__shape .service__slider .service__up,
+#services .service__container .line__shape .service__slider .service__down, #services .service__container .line__shape .service__slider .service__single__slide, #services .service__container .line__shape .service__slider .service__single__slide .service__image, #services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg, #testimonial .testimonial, #testimonial .testimonial .testimonial__image .testimonial__image__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonial {
+  background: url("../images/portfolio-bg.jpg") no-repeat center/cover;
+  padding: 100px 0;
+  -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0% 5%, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+}
+
+#testimonial .testimonial {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+#testimonial .testimonial .testimonial__image {
+  width: 10%;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider {
+  margin-top: 15px;
+  position: relative;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider::after {
+  content: '';
+  width: 1px;
+  height: 113%;
+  background: url(../images/br.png) repeat-y;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider .slick-center.testimonial__image__item {
+  -webkit-transform: scale(1.2) !important;
+          transform: scale(1.2) !important;
+  background: #fec600;
+  left: 15% !important;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider .slick-center.testimonial__image__item img {
+  opacity: 1 !important;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  color: #333333;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider i:hover {
+  background: #fec600;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider i.testimonial__up {
+  top: -50px;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider i.testimonial__down {
+  bottom: -50px;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider .testimonial__image__item {
+  width: 80px !important;
+  height: 80px !important;
+  background: #f1f1f1;
+  padding: 12px 12px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  z-index: 1;
+  overflow: hidden;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  margin: 35px 0;
+}
+
+#testimonial .testimonial .testimonial__image .testimonial__image__slider .testimonial__image__item img {
+  max-width: 90%;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  border-radius: 31%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.4;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+#testimonial .testimonial .testimonial__details {
+  width: 80%;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider {
+  position: relative;
+  z-index: 1;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: -2%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+  border-bottom-left-radius: 20%;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item {
+  width: 720px !important;
+  background: #f1f1f1;
+  padding: 42px 30px;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item .icon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item .icon i {
+  color: #fec600;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item h4 {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  color: #333333;
+}
+
+#testimonial .testimonial .testimonial__details .testimonial__text__slider .testimonial__text__item h6 {
+  color: #333333;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Sacramento", cursive;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: right;
+}
+
 /*
 
                 =================================
@@ -953,6 +1100,28 @@ html {
                 =================================
 
 */
+#about__us .about__us__container .about__left::before, #about__us .about__us__container .about__right::before, #about__us .about__us__container .about__top::before, #about__us .about__us__container .about__bottom::before, #services .service__container .line__shape .service__slider .service__single__slide .left__text::before, #services .service__container .line__shape .service__slider .service__single__slide .right__text::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
+  position: absolute;
+  z-index: -1;
+}
+
+#header #hero__area .slider__item, #header #hero__area .slider__item .hero__buttons, #about__us .about__us__container, #about__us .about__us__container .about__circle, #portfolio .portfolio__image__container, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay, #portfolio .portfolio__image__container .portfolio__image .portfolio__image__overlay a, #services .service__container .line__shape .service__slider .service__up,
+#services .service__container .line__shape .service__slider .service__down, #services .service__container .line__shape .service__slider .service__single__slide, #services .service__container .line__shape .service__slider .service__single__slide .service__image, #services .service__container .line__shape .service__slider .service__single__slide .service__image .service__image__bg, #testimonial .testimonial, #testimonial .testimonial .testimonial__image .testimonial__image__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*
 
                 =================================

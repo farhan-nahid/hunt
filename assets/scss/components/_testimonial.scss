@@ -1,2 +1,151 @@
 @import '../variables/variables';
 @import '../mixins/fontStyles';
+@import '../extended/darkOverlay';
+@import '../extended/flexAlign';
+
+#testimonial {
+  background: url('../images/portfolio-bg.jpg') no-repeat center / cover;
+  padding: 100px 0;
+  clip-path: polygon(0% 5%, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+  &::after {
+    @extend %dark__overlay;
+  }
+  .testimonial {
+    @extend %flex__align;
+    justify-content: space-between !important;
+    .testimonial__image {
+      width: 10%;
+      .testimonial__image__slider {
+        @extend %flex__align;
+        margin-top: 15px;
+        position: relative;
+        &::after {
+          content: '';
+          width: 1px;
+          height: 113%;
+          background: url(../images/br.png) repeat-y;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        .slick-center.testimonial__image__item {
+          transform: scale(1.2) !important;
+          background: $yellow__color;
+          left: 15% !important;
+          transition: all linear 0.4s;
+          img {
+            opacity: 1 !important;
+          }
+        }
+        i {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #fff;
+          text-align: center;
+          line-height: 40px;
+          cursor: pointer;
+          transition: all linear 0.4s;
+          color: $dark__color;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          &:hover {
+            background: $yellow__color;
+          }
+        }
+        i.testimonial__up {
+          top: -50px;
+        }
+        i.testimonial__down {
+          bottom: -50px;
+        }
+        .testimonial__image__item {
+          width: 80px !important;
+          height: 80px !important;
+          background: $bg__color;
+          padding: 12px 12px;
+          border-radius: 50%;
+          position: relative;
+          border: none;
+          transform: scale(0.8);
+          z-index: 1;
+          overflow: hidden;
+          left: 50% !important;
+          transform: translateX(-50%) !important;
+          transition: all linear 0.4s;
+          margin: 35px 0;
+          img {
+            max-width: 90%;
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            border-radius: 31%;
+            transform: translateX(-50%);
+            opacity: 0.4;
+            transition: all linear 0.4s;
+          }
+        }
+      }
+    }
+    .testimonial__details {
+      width: 80%;
+      .testimonial__text__slider {
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: '';
+          width: 40px;
+          height: 40px;
+          background: $bg__color;
+          position: absolute;
+          top: 50%;
+          left: -2%;
+          transform: translateY(-50%) rotate(45deg);
+          z-index: -1;
+          border-bottom-left-radius: 20%;
+        }
+        .testimonial__text__item {
+          width: 720px !important;
+          background: $bg__color;
+          padding: 42px 30px;
+
+          h3 {
+            @include fontStyle(20px, 500, $fr);
+            color: $dark__color;
+            text-transform: capitalize;
+          }
+          .icon {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            i {
+              color: $yellow__color;
+            }
+          }
+          h4 {
+            margin-bottom: 30px;
+            @include fontStyle(16px, 500, $fos);
+            color: $dark__color;
+            text-transform: capitalize;
+          }
+          p {
+            @include fontStyle(14px, 400, $fos);
+            line-height: 24px;
+            color: $dark__color;
+          }
+          h6 {
+            color: $dark__color;
+            margin-top: 30px;
+            @include fontStyle(24px, 600, $fsa);
+            line-height: 24px;
+            text-transform: capitalize;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
