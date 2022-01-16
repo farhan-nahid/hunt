@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(() => {
   'use strict';
 
   // banner slider
@@ -78,4 +78,22 @@ $(document).ready(function () {
     autoplay: true,
     cssEase: 'linear',
   });
+
+  //scroll to top btn function
+
+  $('.scroll__to__top').click(() => {
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+});
+
+// scroll to top btn visibility control
+
+const scrollBtn = document.querySelector('.scroll__to__top');
+window.addEventListener('scroll', () => {
+  scrollY > 50 ? scrollBtn.classList.add('scrolling') : scrollBtn.classList.remove('scrolling');
 });

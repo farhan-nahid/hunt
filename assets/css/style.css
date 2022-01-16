@@ -1132,6 +1132,37 @@ html {
                 =================================
 
 */
+/* 
+
+      scroll to to css
+*/
+.scroll__to__top {
+  width: 40px;
+  height: 40px;
+  background: #fec600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333333;
+  z-index: 9999;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  opacity: 0;
+}
+
+.scroll__to__top:hover {
+  background: #adaaaa;
+}
+
+.scrolling {
+  opacity: 1;
+}
+
 /*
 
                 =================================

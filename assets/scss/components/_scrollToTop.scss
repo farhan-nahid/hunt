@@ -1,0 +1,26 @@
+@import '../variables/variables';
+
+.scroll__to__top {
+  width: 40px;
+  height: 40px;
+  background: $yellow__color;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $dark__color;
+  z-index: 9999;
+  transition: all linear 0.3s;
+  opacity: 0;
+  &:hover {
+    background: $white__pera;
+  }
+}
+
+.scrolling {
+  opacity: 1;
+}
